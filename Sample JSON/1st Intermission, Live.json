@@ -1,0 +1,261 @@
+{
+  "copyright" : "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2022. All Rights Reserved.",
+  "totalItems" : 2,
+  "totalEvents" : 0,
+  "totalGames" : 2,
+  "totalMatches" : 0,
+  "metaData" : {
+    "timeStamp" : "20220208_004000"
+  },
+  "wait" : 10,
+  "dates" : [ {
+    "date" : "2022-02-07",
+    "totalItems" : 2,
+    "totalEvents" : 0,
+    "totalGames" : 2,
+    "totalMatches" : 0,
+    "games" : [ {
+      "gamePk" : 2021020583,
+      "link" : "/api/v1/game/2021020583/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-08T00:00:00Z",
+      "status" : {
+        "abstractGameState" : "Live",
+        "codedGameState" : "3",
+        "detailedState" : "In Progress",
+        "statusCode" : "3",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 31,
+            "losses" : 9,
+            "ot" : 2,
+            "type" : "league"
+          },
+          "score" : 1,
+          "team" : {
+            "id" : 12,
+            "name" : "Carolina Hurricanes",
+            "link" : "/api/v1/teams/12"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 29,
+            "losses" : 10,
+            "ot" : 3,
+            "type" : "league"
+          },
+          "score" : 0,
+          "team" : {
+            "id" : 10,
+            "name" : "Toronto Maple Leafs",
+            "link" : "/api/v1/teams/10"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 1,
+        "currentPeriodOrdinal" : "1st",
+        "currentPeriodTimeRemaining" : "03:48",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-08T00:08:01Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 8,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 12,
+            "rinkSide" : "left"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 10,
+              "name" : "Toronto Maple Leafs",
+              "link" : "/api/v1/teams/10"
+            },
+            "goals" : 0,
+            "shotsOnGoal" : 8,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          },
+          "away" : {
+            "team" : {
+              "id" : 12,
+              "name" : "Carolina Hurricanes",
+              "link" : "/api/v1/teams/12"
+            },
+            "goals" : 1,
+            "shotsOnGoal" : 12,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "Even",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 0,
+          "intermissionTimeElapsed" : 0,
+          "inIntermission" : false
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 228,
+          "situationTimeElapsed" : 972,
+          "inSituation" : false
+        }
+      },
+      "venue" : {
+        "name" : "Scotiabank Arena",
+        "link" : "/api/v1/venues/null"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021020583/content"
+      }
+    }, {
+      "gamePk" : 2021021128,
+      "link" : "/api/v1/game/2021021128/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-08T00:00:00Z",
+      "status" : {
+        "abstractGameState" : "Live",
+        "codedGameState" : "3",
+        "detailedState" : "In Progress",
+        "statusCode" : "3",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 15,
+            "losses" : 25,
+            "ot" : 5,
+            "type" : "league"
+          },
+          "score" : 1,
+          "team" : {
+            "id" : 1,
+            "name" : "New Jersey Devils",
+            "link" : "/api/v1/teams/1"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 14,
+            "losses" : 22,
+            "ot" : 4,
+            "type" : "league"
+          },
+          "score" : 1,
+          "team" : {
+            "id" : 9,
+            "name" : "Ottawa Senators",
+            "link" : "/api/v1/teams/9"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 1,
+        "currentPeriodOrdinal" : "1st",
+        "currentPeriodTimeRemaining" : "END",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-08T00:08:15Z",
+          "endTime" : "2022-02-08T00:37:19Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 1,
+            "shotsOnGoal" : 6,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 10,
+            "rinkSide" : "right"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 9,
+              "name" : "Ottawa Senators",
+              "link" : "/api/v1/teams/9"
+            },
+            "goals" : 1,
+            "shotsOnGoal" : 6,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          },
+          "away" : {
+            "team" : {
+              "id" : 1,
+              "name" : "New Jersey Devils",
+              "link" : "/api/v1/teams/1"
+            },
+            "goals" : 1,
+            "shotsOnGoal" : 10,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "Even",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 930,
+          "intermissionTimeElapsed" : 150,
+          "inIntermission" : true
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 0,
+          "situationTimeElapsed" : 492,
+          "inSituation" : false
+        }
+      },
+      "venue" : {
+        "id" : 5031,
+        "name" : "Canadian Tire Centre",
+        "link" : "/api/v1/venues/5031"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021021128/content"
+      }
+    } ],
+    "events" : [ ],
+    "matches" : [ ]
+  } ]
+}
