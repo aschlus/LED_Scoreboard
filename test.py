@@ -12,13 +12,14 @@ def jprint(obj):
 
 
 live = True
+today = date.today().strftime("%Y-%m-%d")
 
 while live:
     live = False
     response = requests.get("https://statsapi.web.nhl.com/api/v1/" +
                             "schedule?date=" +
                             # "2022-02-08" +
-                            date.today().strftime("%Y-%m-%d") +
+                            today +
                             "&expand=schedule.linescore")
 
     dates = response.json()['dates']
