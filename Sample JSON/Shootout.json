@@ -1,0 +1,1304 @@
+{
+  "copyright" : "NHL and the NHL Shield are registered trademarks of the National Hockey League. NHL and NHL team marks are the property of the NHL and its teams. © NHL 2022. All Rights Reserved.",
+  "totalItems" : 9,
+  "totalEvents" : 0,
+  "totalGames" : 9,
+  "totalMatches" : 0,
+  "metaData" : {
+    "timeStamp" : "20220216_024229"
+  },
+  "wait" : 10,
+  "dates" : [ {
+    "date" : "2022-02-15",
+    "totalItems" : 9,
+    "totalEvents" : 0,
+    "totalGames" : 9,
+    "totalMatches" : 0,
+    "games" : [ {
+      "gamePk" : 2021020514,
+      "link" : "/api/v1/game/2021020514/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-16T00:00:00Z",
+      "status" : {
+        "abstractGameState" : "Live",
+        "codedGameState" : "4",
+        "detailedState" : "In Progress - Critical",
+        "statusCode" : "4",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 15,
+            "losses" : 24,
+            "ot" : 8,
+            "type" : "league"
+          },
+          "score" : 4,
+          "team" : {
+            "id" : 4,
+            "name" : "Philadelphia Flyers",
+            "link" : "/api/v1/teams/4"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 30,
+            "losses" : 11,
+            "ot" : 8,
+            "type" : "league"
+          },
+          "score" : 4,
+          "team" : {
+            "id" : 5,
+            "name" : "Pittsburgh Penguins",
+            "link" : "/api/v1/teams/5"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 4,
+        "currentPeriodOrdinal" : "OT",
+        "currentPeriodTimeRemaining" : "05:00",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T00:08:44Z",
+          "endTime" : "2022-02-16T00:46:07Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 2,
+            "shotsOnGoal" : 9,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 7,
+            "rinkSide" : "right"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T01:04:53Z",
+          "endTime" : "2022-02-16T01:44:04Z",
+          "num" : 2,
+          "ordinalNum" : "2nd",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 18,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 3,
+            "shotsOnGoal" : 13,
+            "rinkSide" : "left"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T02:02:52Z",
+          "num" : 3,
+          "ordinalNum" : "3rd",
+          "home" : {
+            "goals" : 2,
+            "shotsOnGoal" : 6,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 0,
+            "shotsOnGoal" : 7,
+            "rinkSide" : "right"
+          }
+        }, {
+          "periodType" : "OVERTIME",
+          "startTime" : "2022-02-16T02:42:17Z",
+          "num" : 4,
+          "ordinalNum" : "OT",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 0,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 0,
+            "shotsOnGoal" : 0,
+            "rinkSide" : "left"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 5,
+              "name" : "Pittsburgh Penguins",
+              "link" : "/api/v1/teams/5"
+            },
+            "goals" : 4,
+            "shotsOnGoal" : 33,
+            "goaliePulled" : false,
+            "numSkaters" : 3,
+            "powerPlay" : false
+          },
+          "away" : {
+            "team" : {
+              "id" : 4,
+              "name" : "Philadelphia Flyers",
+              "link" : "/api/v1/teams/4"
+            },
+            "goals" : 4,
+            "shotsOnGoal" : 27,
+            "goaliePulled" : false,
+            "numSkaters" : 3,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "Even",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 0,
+          "intermissionTimeElapsed" : 0,
+          "inIntermission" : false
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 300,
+          "situationTimeElapsed" : 0,
+          "inSituation" : false
+        }
+      },
+      "venue" : {
+        "id" : 5034,
+        "name" : "PPG Paints Arena",
+        "link" : "/api/v1/venues/5034"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021020514/content"
+      }
+    }, {
+      "gamePk" : 2021021263,
+      "link" : "/api/v1/game/2021021263/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-16T00:00:00Z",
+      "status" : {
+        "abstractGameState" : "Live",
+        "codedGameState" : "4",
+        "detailedState" : "In Progress - Critical",
+        "statusCode" : "4",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 27,
+            "losses" : 16,
+            "ot" : 3,
+            "type" : "league"
+          },
+          "score" : 1,
+          "team" : {
+            "id" : 6,
+            "name" : "Boston Bruins",
+            "link" : "/api/v1/teams/6"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 30,
+            "losses" : 13,
+            "ot" : 4,
+            "type" : "league"
+          },
+          "score" : 1,
+          "team" : {
+            "id" : 3,
+            "name" : "New York Rangers",
+            "link" : "/api/v1/teams/3"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 5,
+        "currentPeriodOrdinal" : "SO",
+        "currentPeriodTimeRemaining" : "00:00",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T00:08:44Z",
+          "endTime" : "2022-02-16T00:33:20Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 2,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 8,
+            "rinkSide" : "left"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T00:52:14Z",
+          "endTime" : "2022-02-16T01:25:48Z",
+          "num" : 2,
+          "ordinalNum" : "2nd",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 15,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 0,
+            "shotsOnGoal" : 9,
+            "rinkSide" : "right"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T01:45:25Z",
+          "endTime" : "2022-02-16T02:22:07Z",
+          "num" : 3,
+          "ordinalNum" : "3rd",
+          "home" : {
+            "goals" : 1,
+            "shotsOnGoal" : 11,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 0,
+            "shotsOnGoal" : 12,
+            "rinkSide" : "left"
+          }
+        }, {
+          "periodType" : "OVERTIME",
+          "startTime" : "2022-02-16T02:24:54Z",
+          "endTime" : "2022-02-16T02:36:20Z",
+          "num" : 4,
+          "ordinalNum" : "OT",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 6,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 0,
+            "shotsOnGoal" : 3,
+            "rinkSide" : "right"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 1,
+            "attempts" : 3
+          },
+          "home" : {
+            "scores" : 1,
+            "attempts" : 1
+          },
+          "startTime" : "2022-02-16T02:38:10Z"
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 3,
+              "name" : "New York Rangers",
+              "link" : "/api/v1/teams/3"
+            },
+            "goals" : 1,
+            "shotsOnGoal" : 34,
+            "goaliePulled" : false,
+            "numSkaters" : 1,
+            "powerPlay" : false
+          },
+          "away" : {
+            "team" : {
+              "id" : 6,
+              "name" : "Boston Bruins",
+              "link" : "/api/v1/teams/6"
+            },
+            "goals" : 1,
+            "shotsOnGoal" : 32,
+            "goaliePulled" : false,
+            "numSkaters" : 0,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "Even",
+        "hasShootout" : true,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 0,
+          "intermissionTimeElapsed" : 0,
+          "inIntermission" : false
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 0,
+          "situationTimeElapsed" : 0,
+          "inSituation" : false
+        }
+      },
+      "venue" : {
+        "id" : 5054,
+        "name" : "Madison Square Garden",
+        "link" : "/api/v1/venues/5054"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021021263/content"
+      }
+    }, {
+      "gamePk" : 2021021095,
+      "link" : "/api/v1/game/2021021095/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-16T01:00:00Z",
+      "status" : {
+        "abstractGameState" : "Live",
+        "codedGameState" : "3",
+        "detailedState" : "In Progress",
+        "statusCode" : "3",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 26,
+            "losses" : 15,
+            "ot" : 9,
+            "type" : "league"
+          },
+          "score" : 1,
+          "team" : {
+            "id" : 15,
+            "name" : "Washington Capitals",
+            "link" : "/api/v1/teams/15"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 28,
+            "losses" : 16,
+            "ot" : 4,
+            "type" : "league"
+          },
+          "score" : 0,
+          "team" : {
+            "id" : 18,
+            "name" : "Nashville Predators",
+            "link" : "/api/v1/teams/18"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 2,
+        "currentPeriodOrdinal" : "2nd",
+        "currentPeriodTimeRemaining" : "00:45",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T01:08:26Z",
+          "endTime" : "2022-02-16T01:42:33Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 15,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 10,
+            "rinkSide" : "right"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T02:01:28Z",
+          "num" : 2,
+          "ordinalNum" : "2nd",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 8,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 0,
+            "shotsOnGoal" : 9,
+            "rinkSide" : "left"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 18,
+              "name" : "Nashville Predators",
+              "link" : "/api/v1/teams/18"
+            },
+            "goals" : 0,
+            "shotsOnGoal" : 23,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          },
+          "away" : {
+            "team" : {
+              "id" : 15,
+              "name" : "Washington Capitals",
+              "link" : "/api/v1/teams/15"
+            },
+            "goals" : 1,
+            "shotsOnGoal" : 19,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "Even",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 0,
+          "intermissionTimeElapsed" : 0,
+          "inIntermission" : false
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 45,
+          "situationTimeElapsed" : 261,
+          "inSituation" : false
+        }
+      },
+      "venue" : {
+        "id" : 5030,
+        "name" : "Bridgestone Arena",
+        "link" : "/api/v1/venues/5030"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021021095/content"
+      }
+    }, {
+      "gamePk" : 2021020478,
+      "link" : "/api/v1/game/2021020478/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-16T02:00:00Z",
+      "status" : {
+        "abstractGameState" : "Live",
+        "codedGameState" : "3",
+        "detailedState" : "In Progress",
+        "statusCode" : "3",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 23,
+            "losses" : 22,
+            "ot" : 1,
+            "type" : "league"
+          },
+          "score" : 1,
+          "team" : {
+            "id" : 29,
+            "name" : "Columbus Blue Jackets",
+            "link" : "/api/v1/teams/29"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 26,
+            "losses" : 13,
+            "ot" : 6,
+            "type" : "league"
+          },
+          "score" : 2,
+          "team" : {
+            "id" : 20,
+            "name" : "Calgary Flames",
+            "link" : "/api/v1/teams/20"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 1,
+        "currentPeriodOrdinal" : "1st",
+        "currentPeriodTimeRemaining" : "END",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T02:08:14Z",
+          "endTime" : "2022-02-16T02:40:57Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 2,
+            "shotsOnGoal" : 12,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 12,
+            "rinkSide" : "left"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 20,
+              "name" : "Calgary Flames",
+              "link" : "/api/v1/teams/20"
+            },
+            "goals" : 2,
+            "shotsOnGoal" : 12,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          },
+          "away" : {
+            "team" : {
+              "id" : 29,
+              "name" : "Columbus Blue Jackets",
+              "link" : "/api/v1/teams/29"
+            },
+            "goals" : 1,
+            "shotsOnGoal" : 12,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "Even",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 1010,
+          "intermissionTimeElapsed" : 70,
+          "inIntermission" : true
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 0,
+          "situationTimeElapsed" : 1200,
+          "inSituation" : false
+        }
+      },
+      "venue" : {
+        "id" : 5075,
+        "name" : "Scotiabank Saddledome",
+        "link" : "/api/v1/venues/5075"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021020478/content"
+      }
+    }, {
+      "gamePk" : 2021020549,
+      "link" : "/api/v1/game/2021020549/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-16T02:00:00Z",
+      "status" : {
+        "abstractGameState" : "Live",
+        "codedGameState" : "3",
+        "detailedState" : "In Progress",
+        "statusCode" : "3",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 25,
+            "losses" : 19,
+            "ot" : 2,
+            "type" : "league"
+          },
+          "score" : 0,
+          "team" : {
+            "id" : 25,
+            "name" : "Dallas Stars",
+            "link" : "/api/v1/teams/25"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 34,
+            "losses" : 8,
+            "ot" : 4,
+            "type" : "league"
+          },
+          "score" : 0,
+          "team" : {
+            "id" : 21,
+            "name" : "Colorado Avalanche",
+            "link" : "/api/v1/teams/21"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 1,
+        "currentPeriodOrdinal" : "1st",
+        "currentPeriodTimeRemaining" : "02:10",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T02:08:28Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 13,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 0,
+            "shotsOnGoal" : 5,
+            "rinkSide" : "left"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 21,
+              "name" : "Colorado Avalanche",
+              "link" : "/api/v1/teams/21"
+            },
+            "goals" : 0,
+            "shotsOnGoal" : 13,
+            "goaliePulled" : false,
+            "numSkaters" : 4,
+            "powerPlay" : false
+          },
+          "away" : {
+            "team" : {
+              "id" : 25,
+              "name" : "Dallas Stars",
+              "link" : "/api/v1/teams/25"
+            },
+            "goals" : 0,
+            "shotsOnGoal" : 5,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : true
+          }
+        },
+        "powerPlayStrength" : "5-on-4",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 0,
+          "intermissionTimeElapsed" : 0,
+          "inIntermission" : false
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 111,
+          "situationTimeElapsed" : 9,
+          "inSituation" : true
+        }
+      },
+      "venue" : {
+        "id" : 5064,
+        "name" : "Ball Arena",
+        "link" : "/api/v1/venues/5064"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021020549/content"
+      }
+    }, {
+      "gamePk" : 2021020507,
+      "link" : "/api/v1/game/2021020507/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-16T03:30:00Z",
+      "status" : {
+        "abstractGameState" : "Preview",
+        "codedGameState" : "1",
+        "detailedState" : "Scheduled",
+        "statusCode" : "1",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 25,
+            "losses" : 18,
+            "ot" : 3,
+            "type" : "league"
+          },
+          "score" : 0,
+          "team" : {
+            "id" : 22,
+            "name" : "Edmonton Oilers",
+            "link" : "/api/v1/teams/22"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 24,
+            "losses" : 16,
+            "ot" : 7,
+            "type" : "league"
+          },
+          "score" : 0,
+          "team" : {
+            "id" : 26,
+            "name" : "Los Angeles Kings",
+            "link" : "/api/v1/teams/26"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 1,
+        "currentPeriodOrdinal" : "1st",
+        "currentPeriodTimeRemaining" : "20:00",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 0,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 0,
+            "shotsOnGoal" : 0,
+            "rinkSide" : "left"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 26,
+              "name" : "Los Angeles Kings",
+              "link" : "/api/v1/teams/26"
+            },
+            "goals" : 0,
+            "shotsOnGoal" : 0,
+            "goaliePulled" : false,
+            "numSkaters" : 0,
+            "powerPlay" : false
+          },
+          "away" : {
+            "team" : {
+              "id" : 22,
+              "name" : "Edmonton Oilers",
+              "link" : "/api/v1/teams/22"
+            },
+            "goals" : 0,
+            "shotsOnGoal" : 0,
+            "goaliePulled" : false,
+            "numSkaters" : 0,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "Even",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 0,
+          "intermissionTimeElapsed" : 0,
+          "inIntermission" : false
+        }
+      },
+      "venue" : {
+        "name" : "Crypto.com Arena",
+        "link" : "/api/v1/venues/null"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021020507/content"
+      }
+    }, {
+      "gamePk" : 2021020495,
+      "link" : "/api/v1/game/2021020495/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-16T00:00:00Z",
+      "status" : {
+        "abstractGameState" : "Final",
+        "codedGameState" : "6",
+        "detailedState" : "Final",
+        "statusCode" : "6",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 28,
+            "losses" : 14,
+            "ot" : 5,
+            "type" : "league"
+          },
+          "score" : 5,
+          "team" : {
+            "id" : 19,
+            "name" : "St. Louis Blues",
+            "link" : "/api/v1/teams/19"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 17,
+            "losses" : 25,
+            "ot" : 4,
+            "type" : "league"
+          },
+          "score" : 2,
+          "team" : {
+            "id" : 9,
+            "name" : "Ottawa Senators",
+            "link" : "/api/v1/teams/9"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 3,
+        "currentPeriodOrdinal" : "3rd",
+        "currentPeriodTimeRemaining" : "Final",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T00:08:10Z",
+          "endTime" : "2022-02-16T00:44:47Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 1,
+            "shotsOnGoal" : 7,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 14,
+            "rinkSide" : "right"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T01:03:26Z",
+          "endTime" : "2022-02-16T01:40:06Z",
+          "num" : 2,
+          "ordinalNum" : "2nd",
+          "home" : {
+            "goals" : 1,
+            "shotsOnGoal" : 6,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 2,
+            "shotsOnGoal" : 8,
+            "rinkSide" : "left"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T01:58:34Z",
+          "endTime" : "2022-02-16T02:35:46Z",
+          "num" : 3,
+          "ordinalNum" : "3rd",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 7,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 2,
+            "shotsOnGoal" : 14,
+            "rinkSide" : "right"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 9,
+              "name" : "Ottawa Senators",
+              "link" : "/api/v1/teams/9"
+            },
+            "goals" : 2,
+            "shotsOnGoal" : 20,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          },
+          "away" : {
+            "team" : {
+              "id" : 19,
+              "name" : "St. Louis Blues",
+              "link" : "/api/v1/teams/19"
+            },
+            "goals" : 5,
+            "shotsOnGoal" : 36,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "Even",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 0,
+          "intermissionTimeElapsed" : 0,
+          "inIntermission" : false
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 0,
+          "situationTimeElapsed" : 655,
+          "inSituation" : false
+        }
+      },
+      "venue" : {
+        "id" : 5031,
+        "name" : "Canadian Tire Centre",
+        "link" : "/api/v1/venues/5031"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021020495/content"
+      }
+    }, {
+      "gamePk" : 2021020524,
+      "link" : "/api/v1/game/2021020524/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-16T00:00:00Z",
+      "status" : {
+        "abstractGameState" : "Final",
+        "codedGameState" : "7",
+        "detailedState" : "Final",
+        "statusCode" : "7",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 0,
+            "losses" : 0,
+            "type" : "league"
+          },
+          "score" : 3,
+          "team" : {
+            "id" : 2,
+            "name" : "New York Islanders",
+            "link" : "/api/v1/teams/2"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 0,
+            "losses" : 0,
+            "type" : "league"
+          },
+          "score" : 6,
+          "team" : {
+            "id" : 7,
+            "name" : "Buffalo Sabres",
+            "link" : "/api/v1/teams/7"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 3,
+        "currentPeriodOrdinal" : "3rd",
+        "currentPeriodTimeRemaining" : "Final",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T00:08:24Z",
+          "endTime" : "2022-02-16T00:40:47Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 1,
+            "shotsOnGoal" : 12,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 10,
+            "rinkSide" : "right"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T00:59:37Z",
+          "endTime" : "2022-02-16T01:39:02Z",
+          "num" : 2,
+          "ordinalNum" : "2nd",
+          "home" : {
+            "goals" : 2,
+            "shotsOnGoal" : 17,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 12,
+            "rinkSide" : "left"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T01:57:43Z",
+          "endTime" : "2022-02-16T02:33:32Z",
+          "num" : 3,
+          "ordinalNum" : "3rd",
+          "home" : {
+            "goals" : 3,
+            "shotsOnGoal" : 12,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 11,
+            "rinkSide" : "right"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 7,
+              "name" : "Buffalo Sabres",
+              "link" : "/api/v1/teams/7"
+            },
+            "goals" : 6,
+            "shotsOnGoal" : 41,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : true
+          },
+          "away" : {
+            "team" : {
+              "id" : 2,
+              "name" : "New York Islanders",
+              "link" : "/api/v1/teams/2"
+            },
+            "goals" : 3,
+            "shotsOnGoal" : 33,
+            "goaliePulled" : false,
+            "numSkaters" : 4,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "5-on-4",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 0,
+          "intermissionTimeElapsed" : 0,
+          "inIntermission" : false
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 60,
+          "situationTimeElapsed" : 60,
+          "inSituation" : true
+        }
+      },
+      "venue" : {
+        "id" : 5039,
+        "name" : "KeyBank Center",
+        "link" : "/api/v1/venues/5039"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021020524/content"
+      }
+    }, {
+      "gamePk" : 2021020631,
+      "link" : "/api/v1/game/2021020631/feed/live",
+      "gameType" : "R",
+      "season" : "20212022",
+      "gameDate" : "2022-02-16T00:00:00Z",
+      "status" : {
+        "abstractGameState" : "Final",
+        "codedGameState" : "6",
+        "detailedState" : "Final",
+        "statusCode" : "6",
+        "startTimeTBD" : false
+      },
+      "teams" : {
+        "away" : {
+          "leagueRecord" : {
+            "wins" : 32,
+            "losses" : 11,
+            "ot" : 6,
+            "type" : "league"
+          },
+          "score" : 6,
+          "team" : {
+            "id" : 14,
+            "name" : "Tampa Bay Lightning",
+            "link" : "/api/v1/teams/14"
+          }
+        },
+        "home" : {
+          "leagueRecord" : {
+            "wins" : 17,
+            "losses" : 28,
+            "ot" : 5,
+            "type" : "league"
+          },
+          "score" : 3,
+          "team" : {
+            "id" : 1,
+            "name" : "New Jersey Devils",
+            "link" : "/api/v1/teams/1"
+          }
+        }
+      },
+      "linescore" : {
+        "currentPeriod" : 3,
+        "currentPeriodOrdinal" : "3rd",
+        "currentPeriodTimeRemaining" : "Final",
+        "periods" : [ {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T00:08:41Z",
+          "endTime" : "2022-02-16T00:43:15Z",
+          "num" : 1,
+          "ordinalNum" : "1st",
+          "home" : {
+            "goals" : 2,
+            "shotsOnGoal" : 9,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 1,
+            "shotsOnGoal" : 4,
+            "rinkSide" : "right"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T01:02:28Z",
+          "endTime" : "2022-02-16T01:39:15Z",
+          "num" : 2,
+          "ordinalNum" : "2nd",
+          "home" : {
+            "goals" : 1,
+            "shotsOnGoal" : 7,
+            "rinkSide" : "right"
+          },
+          "away" : {
+            "goals" : 2,
+            "shotsOnGoal" : 14,
+            "rinkSide" : "left"
+          }
+        }, {
+          "periodType" : "REGULAR",
+          "startTime" : "2022-02-16T01:57:53Z",
+          "endTime" : "2022-02-16T02:41:21Z",
+          "num" : 3,
+          "ordinalNum" : "3rd",
+          "home" : {
+            "goals" : 0,
+            "shotsOnGoal" : 9,
+            "rinkSide" : "left"
+          },
+          "away" : {
+            "goals" : 3,
+            "shotsOnGoal" : 14,
+            "rinkSide" : "right"
+          }
+        } ],
+        "shootoutInfo" : {
+          "away" : {
+            "scores" : 0,
+            "attempts" : 0
+          },
+          "home" : {
+            "scores" : 0,
+            "attempts" : 0
+          }
+        },
+        "teams" : {
+          "home" : {
+            "team" : {
+              "id" : 1,
+              "name" : "New Jersey Devils",
+              "link" : "/api/v1/teams/1"
+            },
+            "goals" : 3,
+            "shotsOnGoal" : 25,
+            "goaliePulled" : false,
+            "numSkaters" : 5,
+            "powerPlay" : true
+          },
+          "away" : {
+            "team" : {
+              "id" : 14,
+              "name" : "Tampa Bay Lightning",
+              "link" : "/api/v1/teams/14"
+            },
+            "goals" : 6,
+            "shotsOnGoal" : 32,
+            "goaliePulled" : false,
+            "numSkaters" : 4,
+            "powerPlay" : false
+          }
+        },
+        "powerPlayStrength" : "5-on-4",
+        "hasShootout" : false,
+        "intermissionInfo" : {
+          "intermissionTimeRemaining" : 0,
+          "intermissionTimeElapsed" : 0,
+          "inIntermission" : false
+        },
+        "powerPlayInfo" : {
+          "situationTimeRemaining" : 36,
+          "situationTimeElapsed" : 84,
+          "inSituation" : true
+        }
+      },
+      "venue" : {
+        "name" : "Prudential Center",
+        "link" : "/api/v1/venues/null"
+      },
+      "content" : {
+        "link" : "/api/v1/game/2021020631/content"
+      }
+    } ],
+    "events" : [ ],
+    "matches" : [ ]
+  } ]
+}
