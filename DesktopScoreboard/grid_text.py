@@ -16,6 +16,12 @@ colon = np.asanyarray(([BLACK, BLACK, BLACK],
                        [BLACK, WHITE, BLACK],
                        [BLACK, BLACK, BLACK]))
 
+dash = np.asanyarray(([BLACK, BLACK, BLACK],
+                      [BLACK, BLACK, BLACK],
+                      [WHITE, WHITE, WHITE],
+                      [BLACK, BLACK, BLACK],
+                      [BLACK, BLACK, BLACK]))
+
 zero = np.asanyarray(([WHITE, WHITE, WHITE],
                       [WHITE, BLACK, WHITE],
                       [WHITE, BLACK, WHITE],
@@ -181,6 +187,7 @@ letter_g = np.asanyarray(([WHITE, WHITE, WHITE],
 numDict = {
     " ": space,
     ":": colon,
+    "-": dash,
     "0": zero,
     "1": one,
     "2": two,

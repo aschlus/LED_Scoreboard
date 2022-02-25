@@ -47,18 +47,22 @@ def update():
         checkEvents()
         clear()
         if(test.timeleft is not None):
-            #drawLogo(team_logo.PIT, 0, 0)
-            if not test.intermission:
+            drawLogo(team_logo.WPG, 0, -13)
+            drawLogo(team_logo.ANA, 0, 45)
+            pygame.draw.rect(_VARS['surf'], GREY, pygame.Rect(0, 0, WIDTH, HEIGHT), PIXEL)
+            if not test.intermissiontime:
                 if not test.pregame:
                     drawNum(split(test.curperiod), 14, ((64-4*len(split(test.curperiod)))/2))
                 drawNum(split(test.timeleft), 20, ((64-4*len(split(test.timeleft)))/2))
             else:
-                drawNum(split(test.curperiod), 18, ((64-4*len(split(test.curperiod)))/2))
-            drawNum(split(grid_text.teamDict[test.team1name]), 3, (64/4) - 7)
-            drawNum(split(grid_text.teamDict[test.team2name]), 3, (64/4 * 3) - 4)
+                drawNum(split(test.curperiod), 14, ((64-4*len(split(test.curperiod)))/2))
+                drawNum(split("INT"), 20, (((64-4*3)/2)))
+            #drawNum(split(grid_text.teamDict[test.team1name]), 3, (64/4) - 7)
+            #drawNum(split(grid_text.teamDict[test.team2name]), 3, (64/4 * 3) - 4)
             if not test.pregame:
-                drawNum(split(str(test.team1score)), 9, (64/4) - 3)
-                drawNum(split(str(test.team2score)), 9, 64/4 * 3)
+                drawNum(split(str(test.team1score)), 5, (64/2) - 7)
+                drawNum("-", 5, (64/2) - 2)
+                drawNum(split(str(test.team2score)), 5, (64/2) + 3)
         drawGrid()
         pygame.display.update()
     pygame.quit()
@@ -76,10 +80,11 @@ def drawGrid():
 
 
 def drawCell(x, y, color):
-    pygame.draw.rect(
-        _VARS['surf'], color,
-        (x, y, PIXEL, PIXEL)
-    )
+    if x >= 0 and y >= 0 and x < WIDTH and y < HEIGHT:
+        pygame.draw.rect(
+            _VARS['surf'], color,
+            (x, y, PIXEL, PIXEL)
+        )
 
 
 def placeCell():
@@ -122,8 +127,10 @@ def checkEvents():
     global killThreads
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
+            test.killThreads = True
             killThreads = True
         elif event.type == KEYDOWN and event.key == K_q:
+            test.killThreads = True
             killThreads = True
 
 

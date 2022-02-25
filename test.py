@@ -18,7 +18,9 @@ team1name = None
 team2name = None
 
 curperiod = None
-intermission = None
+intermissiontime = None
+
+killThreads = False
 
 
 def schedule():
@@ -32,13 +34,13 @@ def schedule():
     global team1name
     global team2name
     global curperiod
-    global intermission
+    global intermissiontime
 
     today = date.today()
     # today = datetime(date.today().year, date.today().month, date.today().day - 1)
     todaystring = today.strftime("%Y-%m-%d")
 
-    while live:
+    while live and not killThreads:
         live = False
         timeflag = None
         response = requests.get("https://statsapi.web.nhl.com/api/v1/" +
@@ -92,8 +94,7 @@ def schedule():
                         team1name = team1
                         team2name = team2
                         curperiod = period
-                        if intermission:
-                            curperiod = curperiod + ' INT'
+                        intermissiontime = intermission
 
                 elif status == "Final":
                     score1 = game['teams']['home']['score']
@@ -152,3 +153,5 @@ def schedule():
 
                 dayover = False
                 live = True
+            else:
+                print("else")
