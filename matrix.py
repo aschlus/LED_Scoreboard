@@ -16,14 +16,19 @@ from PIL import Image
 # else:
 #     image_file = sys.argv[1]
 
-url = 'https://assets.nhle.com/logos/nhl/svg/WSH_light.svg'
+url1 = 'https://assets.nhle.com/logos/nhl/svg/WSH_light.svg'
+url2 = 'https://assets.nhle.com/logos/nhl/svg/ANA_dark.svg'
 
-out = BytesIO()
+out1 = BytesIO()
+out2 = BytesIO()
 # cairosvg.svg2png(url=url, write_to=out)
-cairosvg.svg2png(file_obj=open("DesktopScoreboard/Logo_Files/WSH_alt.svg", "rb"), write_to=out)
-print(out)
-image_file = Image.open(out)
-image = image_file.crop(image_file.getbbox())
+cairosvg.svg2png(file_obj=open("DesktopScoreboard/Logo_Files/WSH_alt.svg", "rb"), write_to=out1)
+image_file1 = Image.open(out1)
+image1 = image_file1.crop(image_file1.getbbox())
+
+cairosvg.svg2png(url=url2, write_to=out2)
+image_file2 = Image.open(out2)
+image2 = image_file2.crop(image_file2.getbbox())
 
 # image = Image.open(image_file)
 
@@ -39,10 +44,12 @@ options.gpio_slowdown = 2
 matrix = RGBMatrix(options=options)
 
 # Make image fit our screen.
-image.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
+image1.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
+image2.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
 # image = image.resize([int(.5 * s) for s in image.size])
 
-matrix.SetImage(image.convert('RGB'), -matrix.width / 4, 0)
+matrix.SetImage(image1.convert('RGB'), -matrix.width / 4, 0)
+matrix.SetImage(image2.convert('RGB'), matrix.width * 3 / 4, 0)
 
 try:
     print("Press CTRL-C to stop.")
