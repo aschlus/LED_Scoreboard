@@ -46,7 +46,8 @@ matrix = RGBMatrix(options=options)
 # Make image fit our screen.
 image1.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
 image2.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
-# image = image.resize([int(.5 * s) for s in image.size])
+image1 = image1.resize([int(.8 * s) for s in image1.size])
+image2 = image2.resize([int(.8 * s) for s in image2.size])
 
 matrix.SetImage(image1.convert('RGB'), -matrix.width / 4, 0)
 matrix.SetImage(image2.convert('RGB'), matrix.width * 2 / 4, 0)
