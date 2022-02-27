@@ -40,7 +40,7 @@ matrix = RGBMatrix(options=options)
 
 # Make image fit our screen.
 image.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
-image = image.resize([int(.25 * s) for s in image.size])
+image = image.resize([int(.5 * s) for s in image.size])
 
 matrix.SetImage(image.convert('RGB'), 2, 2)
 
