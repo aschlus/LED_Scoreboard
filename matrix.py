@@ -39,10 +39,10 @@ options.gpio_slowdown = 2
 matrix = RGBMatrix(options=options)
 
 # Make image fit our screen.
-image.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
-image = image.resize([int(.75 * s) for s in image.size])
+image.thumbnail((matrix.width, matrix.height - 4), Image.ANTIALIAS)
+# image = image.resize([int(.75 * s) for s in image.size])
 
-matrix.SetImage(image.convert('RGB'), 5, 5)
+matrix.SetImage(image.convert('RGB'), 2, 2)
 
 try:
     print("Press CTRL-C to stop.")
