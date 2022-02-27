@@ -49,8 +49,8 @@ image2.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
 image1 = image1.resize([int(.85 * s) for s in image1.size])
 image2 = image2.resize([int(.8 * s) for s in image2.size])
 
-matrix.SetImage(image1.convert('RGB'), -matrix.width / 4, 2)
-matrix.SetImage(image2.convert('RGB'), (matrix.width * 2 / 4) + 5, 3)
+matrix.SetImage(image1.convert('RGB'), (-matrix.width / 4) + 1, 2)
+matrix.SetImage(image2.convert('RGB'), (matrix.width * 2 / 4), 3)
 
 blackout = Image.new(mode="RGB", size=(22, 32))
 blackoutdraw = ImageDraw.Draw(blackout)
