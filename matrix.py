@@ -5,6 +5,9 @@ import cairosvg
 
 from io import BytesIO
 
+# rgbmatrix = Scoreboard.matrixmodule.rpi-rgb-led-matrix.bindings.python.rgbmatrix
+sys.path.append('matrixmodule/rpi-rgb-led-matrix/bindings/python')
+
 from rgbmatrix import RGBMatrix, RGBMatrixOptions
 from PIL import Image
 
