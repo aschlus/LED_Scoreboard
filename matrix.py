@@ -40,7 +40,7 @@ options.chain_length = 1
 options.parallel = 1
 options.hardware_mapping = 'adafruit-hat-pwm'
 options.gpio_slowdown = 2
-options.brightness = 30
+options.brightness = 80
 
 matrix = RGBMatrix(options=options)
 
@@ -51,7 +51,7 @@ image1 = image1.resize([int(.85 * s) for s in image1.size])
 image2 = image2.resize([int(.8 * s) for s in image2.size])
 
 matrix.SetImage(image1.convert('RGB'), (-matrix.width / 4) + 1, 2)
-matrix.SetImage(image2.convert('RGB'), (matrix.width * 2 / 4) - 6, 3)
+matrix.SetImage(image2.convert('RGB'), (matrix.width * 2 / 4) - 7, 3)
 
 blackout = Image.new(mode="RGB", size=(22, 32))
 blackoutdraw = ImageDraw.Draw(blackout)
