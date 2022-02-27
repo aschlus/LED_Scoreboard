@@ -20,7 +20,7 @@ url = 'https://assets.nhle.com/logos/nhl/svg/WSH_light.svg'
 
 out = BytesIO()
 # cairosvg.svg2png(url=url, write_to=out)
-cairosvg.svg2png(file_obj=open("/DesktopScoreboard/Logo_Files/WSH_alt.svg", "rb"), write_to=out)
+cairosvg.svg2png(file_obj=open("DesktopScoreboard/Logo_Files/WSH_alt.svg", "rb"), write_to=out)
 print(out)
 image_file = Image.open(out)
 image = image_file.crop(image_file.getbbox())
