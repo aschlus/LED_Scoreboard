@@ -9,7 +9,7 @@ from io import BytesIO
 sys.path.append('matrixmodule/rpi-rgb-led-matrix/bindings/python')
 
 from rgbmatrix import RGBMatrix, RGBMatrixOptions
-from PIL import Image
+from PIL import Image, ImageDraw
 
 # if len(sys.argv) < 2:
 #     sys.exit("Require an image argument")
@@ -51,6 +51,14 @@ image2 = image2.resize([int(.8 * s) for s in image2.size])
 
 matrix.SetImage(image1.convert('RGB'), -matrix.width / 4, 2)
 matrix.SetImage(image2.convert('RGB'), (matrix.width * 2 / 4) + 5, 3)
+
+blackout = Image.new(mode="RGB", size=(22, 32))
+blackoutdraw = ImageDraw.Draw(blackout)
+blackoutdraw.rectangle([(0, 0), (21, 32)], fill="# 000000")
+blackout.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
+
+matrix.SetImage(blackout.convert('RGB'), 22, 0)
+
 
 try:
     print("Press CTRL-C to stop.")
