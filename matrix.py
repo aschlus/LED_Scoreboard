@@ -49,7 +49,7 @@ image2.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
 # image = image.resize([int(.5 * s) for s in image.size])
 
 matrix.SetImage(image1.convert('RGB'), -matrix.width / 4, 0)
-matrix.SetImage(image2.convert('RGB'), matrix.width * 3 / 4, 0)
+matrix.SetImage(image2.convert('RGB'), matrix.width * 2 / 4, 0)
 
 try:
     print("Press CTRL-C to stop.")
