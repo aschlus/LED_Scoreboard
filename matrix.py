@@ -54,7 +54,7 @@ matrix.SetImage(image2.convert('RGB'), (matrix.width * 2 / 4) + 5, 3)
 
 blackout = Image.new(mode="RGB", size=(22, 32))
 blackoutdraw = ImageDraw.Draw(blackout)
-blackoutdraw.rectangle([(0, 0), (21, 32)], fill="# 000000")
+blackoutdraw.rectangle([(0, 0), (21, 32)], fill="black")
 blackout.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
 
 matrix.SetImage(blackout.convert('RGB'), 22, 0)
