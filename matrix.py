@@ -17,10 +17,11 @@ url = 'https://assets.nhle.com/logos/nhl/svg/WSH_light.svg'
 
 out = BytesIO()
 cairosvg.svg2png(url=url, write_to=out)
+print(out)
 image_file = Image.open(out)
-image_file = image_file.crop(image_file.getbbox())
+image = image_file.crop(image_file.getbbox())
 
-image = Image.open(image_file)
+# image = Image.open(image_file)
 
 # Configuration for the matrix
 options = RGBMatrixOptions()
