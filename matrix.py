@@ -46,11 +46,11 @@ matrix = RGBMatrix(options=options)
 # Make image fit our screen.
 image1.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
 image2.thumbnail((matrix.width, matrix.height), Image.ANTIALIAS)
-image1 = image1.resize([int(.8 * s) for s in image1.size])
+image1 = image1.resize([int(.85 * s) for s in image1.size])
 image2 = image2.resize([int(.8 * s) for s in image2.size])
 
-matrix.SetImage(image1.convert('RGB'), -matrix.width / 4, 0)
-matrix.SetImage(image2.convert('RGB'), matrix.width * 2 / 4, 0)
+matrix.SetImage(image1.convert('RGB'), -matrix.width / 4, 2)
+matrix.SetImage(image2.convert('RGB'), (matrix.width * 2 / 4) + 5, 3)
 
 try:
     print("Press CTRL-C to stop.")
