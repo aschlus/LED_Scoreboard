@@ -1,3 +1,8 @@
-from setuptools import setup, find_packages
+#!/usr/bin/env python3
 
-setup(name='scoreboard', version='1.0', packages=find_packages())
+from distutils.core import setup
+
+setup(name='Scoreboard',
+      version='1.0',
+      packages=['assets', 'src', 'helpers']
+      )

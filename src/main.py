@@ -4,9 +4,9 @@ import os
 import time
 import threading
 import score
+from helpers import render
 from rgbmatrix import RGBMatrix, RGBMatrixOptions
-from PIL import Image, ImageDraw, ImageFont
-# from assets import fonts
+from PIL import ImageFont
 
 
 def run():
@@ -23,12 +23,8 @@ def run():
 
     font = ImageFont.truetype(get_file("assets/fonts/04B_24__.TTF"), 16)
 
-    loading = Image.new("RGB", size=(matrix.width, matrix.height))
-    loadingdraw = ImageDraw.Draw(loading)
-    loadingdraw.text((0, 0), "LOADING...", font=font, fill="white")
-    loading = loading.crop(loading.getbbox())
+    render.draw_text(matrix, "LOADING...", font, [1, 10])
 
-    matrix.SetImage(loading.convert('RGB'), 1, 10)
     time.sleep(3)
 
     t = threading.Thread(target=score.run2, args=[matrix])
