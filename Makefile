@@ -1,4 +1,4 @@
-RGB_LIB_DISTRIBUTION=matrixmodule/rpi-rgb-led-matrix
+RGB_LIB_DISTRIBUTION=matrixmodule/matrix
 RGB_INCDIR=$(RGB_LIB_DISTRIBUTION)/include
 RGB_LIBDIR=$(RGB_LIB_DISTRIBUTION)/lib
 RGB_LIBRARY_NAME=rgbmatrix
