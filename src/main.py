@@ -25,7 +25,7 @@ def run():
 
     render.draw_text(matrix, "LOADING...", font, [1, 10])
 
-    time.sleep(3)
+    # time.sleep(3)
 
     t = threading.Thread(target=score.run2, args=[matrix])
     t.setDaemon(True)

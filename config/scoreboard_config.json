@@ -1,0 +1,85 @@
+{
+     "teams" : [  {
+          "name" : "New Jersey Devils",
+          "abbreviation" : "NJD",
+          "logo" : "https://assets.nhle.com/logos/nhl/svg/NJD_dark.svg",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-7, 3],
+               "away" : [40, 3]
+          }
+      }, {
+          "name" : "New York Islanders",
+          "abbreviation" : "NYI",
+          "logo" : "https://assets.nhle.com/logos/nhl/svg/NYI_dark.svg",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-7, 2],
+               "away" : [40, 2]
+          }
+     }, {
+          "name" : "New York Rangers",
+          "abbreviation" : "NYR",
+          "logo" : "https://assets.nhle.com/logos/nhl/svg/NYR_dark.svg",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-7, 3],
+               "away" : [40, 3]
+          }
+      }, {
+          "name" : "Philadelphia Flyers",
+          "abbreviation" : "PHI",
+          "logo" : "https://assets.nhle.com/logos/nhl/svg/PHI_dark.svg",
+          "position" : {
+               "scale" : 0.80,
+               "home" : [-15, 2],
+               "away" : [25, 2]
+          }
+     }, {
+          "name" : "Pittsburgh Penguins",
+          "abbreviation" : "PIT",
+          "logo" : "https://assets.nhle.com/logos/nhl/svg/PIT_dark.svg",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-7, 3],
+               "away" : [40, 3]
+          }
+      }, {
+          "name" : "Boston Bruins",
+          "abbreviation" : "BOS",
+          "logo" : "https://assets.nhle.com/logos/nhl/svg/BOS_dark.svg",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-7, 3],
+               "away" : [40, 3]
+          }
+      }, {
+          "name" : "Buffalo Sabres",
+          "abbreviation" : "BUF",
+          "logo" : "https://assets.nhle.com/logos/nhl/svg/BUF_dark.svg",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-7, 3],
+               "away" : [40, 3]
+          }
+      }, {
+          "name" : "Washington Capitals",
+          "abbreviation" : "WSH",
+          "logo" : "http://thecraftchop.com/files/images/washington-capitals2.svg",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-15, 2],
+               "away" : [25, 2]
+          }
+     }, {
+          "name" : "Anaheim Ducks",
+          "abbreviation" : "ANA",
+          "logo" : "https://assets.nhle.com/logos/nhl/svg/ANA_dark.svg",
+          "position" : {
+               "scale" : 0.80,
+               "home" : [-15, 3],
+               "away" : [25, 3]
+          }
+     } ]
+
+}
