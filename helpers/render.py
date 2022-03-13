@@ -1,4 +1,5 @@
 import cairosvg
+import math
 from io import BytesIO
 from PIL import Image, ImageDraw
 
@@ -9,7 +10,25 @@ def draw_text(canvas, text, font, position):
     img_draw.text((0, 0), text, font=font, fill="white")
     img = img.crop(img.getbbox())
 
-    canvas.SetImage(img.convert('RGB'), position[0], position[1])
+    coords = []
+
+    if position == "center_status":
+        coords.append(math.floor((canvas.width - img.width) / 2))
+        coords.append(1)
+    elif position == "center_time":
+        mod = 0
+        if text == "1ST" or text == "2ND" or text == "3RD":
+            mod = 1
+        coords.append(math.floor((canvas.width - img.width) / 2) + mod)
+        coords.append(7)
+    elif position == "center_score":
+        coords.append(math.floor((canvas.width - img.width) / 2))
+        coords.append(15)
+    elif position == "loading":
+        coords.append(1)
+        coords.append(10)
+
+    canvas.SetImage(img.convert('RGB'), coords[0], coords[1])
 
 
 def draw_rect(canvas, size, color, position):
@@ -28,9 +47,9 @@ def draw_img(canvas, img, scale, position):
     canvas.SetImage(img.convert('RGB'), position[0], position[1])
 
 
-def convert(url):
+def convert(file):
     out = BytesIO()
-    cairosvg.svg2png(url=url, write_to=out)
+    cairosvg.svg2png(file_obj=open(file, "rb"), write_to=out)
     img = Image.open(out)
     img = img.crop(img.getbbox())
     return img
