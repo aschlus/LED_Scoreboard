@@ -4,6 +4,8 @@ import os
 import time
 import threading
 import scoreboard_control
+import mlb_scoreboard_control
+import train_control
 import server
 import socket
 from helpers import render
@@ -26,19 +28,30 @@ def run(server_socket):
 
     font = ImageFont.truetype(get_file("assets/fonts/04B_24__.TTF"), 16)
 
-    render.draw_text(matrix, "LOADING...", font, "loading")
+    render.draw_text(matrix, "LOADING...", font, "white", "loading")
 
     # time.sleep(3)
 
-    board = None
+    board = "MLB Scoreboard"
 
     server_thread = threading.Thread(target=server.start_server, args=[server_socket, matrix, board])
     server_thread.setDaemon(True)
     server_thread.start()
 
-    board_thread = threading.Thread(target=scoreboard_control.run2, args=[matrix, board])
-    board_thread.setDaemon(True)
-    board_thread.start()
+    if board == "NHL Scoreboard":
+        board_thread = threading.Thread(target=scoreboard_control.run2, args=[matrix, board])
+        board_thread.setDaemon(True)
+        board_thread.start()
+
+    if board == "MLB Scoreboard":
+        board_thread = threading.Thread(target=mlb_scoreboard_control.run2, args=[matrix, board])
+        board_thread.setDaemon(True)
+        board_thread.start()
+
+    if board == "Metro":
+        train_thread = threading.Thread(target=train_control.run_train, args=[matrix, board])
+        train_thread.setDaemon(True)
+        train_thread.start()
 
     while True:
         time.sleep(5)

@@ -9,12 +9,12 @@ class Game:
         self.team2 = None
         self.starttime = None
         self.status = None
-        self.period = None
+        self.inning = None
+        self.inning_state = None
+        self.outs = None
         self.live = None
-        self.remaining = None
         self.score1 = None
         self.score2 = None
-        self.intermission = None
         self.final = None
         self.priority = False
         self.no_games = False
@@ -40,17 +40,22 @@ class Game:
             self.status = status
 
     def update_status(self):
-        long = False
-        if (len(self.period)) == 3:
-            long = True
-        if self.period == "1st":
-            self.status = "1ST"
-        elif self.period == "2nd":
-            self.status = "2ND"
-        elif self.period == "3rd":
-            self.status = "3RD"
-        elif self.period == "OT" or self.period == "SO" or (long and (self.period[1] == "O" and self.period[2] == "T")):
-            self.status = self.period
+        half = None
+        if self.inning_state == "Top":
+            half = "T"
+        elif self.inning_state == "Bottom":
+            half = "B"
+        elif self.inning_state == "Start":
+            half = "S"
+            self.outs = 0
+        elif self.inning_state == "Middle":
+            half = "M"
+            self.outs = 0
+        elif self.inning_state == "End":
+            half = "E"
+        else:
+            half = " "
+        self.status = half + " " + str(self.inning)
 
     def display_teams(self):
         print(self.team1 + " vs " + self.team2)

@@ -9,7 +9,7 @@ port = 5000
 json_m = {
     'brightness': 100,
     'board': 'scoreboard',
-    'kill_flag': True
+    'kill_flag': False
 }
 
 client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)

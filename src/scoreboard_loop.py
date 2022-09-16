@@ -1,10 +1,10 @@
 import requests
 import time
 import game
-from datetime import date
+from datetime import date, datetime
 
 
-def data_loop(games):
+def data_loop(games, kill_flag):
     today = date.today()
     # today = datetime(date.today().year, date.today().month, date.today().day - 1)
     todaystring = today.strftime("%Y-%m-%d")
@@ -16,6 +16,10 @@ def data_loop(games):
     games_data = None
 
     while True:
+
+        if kill_flag():
+            print("KILLED")
+            break
 
         try:
             session = requests.Session()
@@ -30,49 +34,57 @@ def data_loop(games):
             print("*************DNS ERROR**************")
 
         if response is not None:
+            print("-----------------------------------------------------------------")
             dates = response.json()['dates']
-            games_data = dates[0]['games']
-
-        for game_data in games_data:
-            g = None
-            if len(games) == 0:
+            if dates == []:
                 g = game.Game()
-                g.id = game_data["gamePk"]
+                g.no_games = True
                 games.append(g)
+            else:
+                games_data = dates[0]['games']
 
-            exists = False
-            for x in games:
-                if x.id == game_data["gamePk"]:
-                    exists = True
-                    g = x
+        if games_data is not None:
+            for game_data in games_data:
+                if kill_flag():
                     break
-            if not exists:
-                g = game.Game()
-                g.id = game_data["gamePk"]
-                games.append(g)
+                g = None
+                if len(games) == 0:
+                    g = game.Game()
+                    g.id = game_data["gamePk"]
+                    games.append(g)
 
-            g.set_starttime(game_data['gameDate'])
-            g.set_status(game_data['status']['abstractGameState'])
+                exists = False
+                for x in games:
+                    if x.id == game_data["gamePk"]:
+                        exists = True
+                        g = x
+                        break
+                if not exists:
+                    g = game.Game()
+                    g.id = game_data["gamePk"]
+                    games.append(g)
 
-            g.team1 = game_data['teams']['home']['team']['name']
-            g.team2 = game_data['teams']['away']['team']['name']
-            if g.live:
-                if g.team1 == priority or g.team2 == priority:
-                    g.priority = True
-                g.period = game_data['linescore']['currentPeriodOrdinal']
-                g.remaining = game_data['linescore']['currentPeriodTimeRemaining']
-                g.intermission = game_data['linescore']['intermissionInfo']['inIntermission']
-                g.update_status()
-            if g.live or g.final:
-                g.score1 = game_data['teams']['home']['score']
-                g.score2 = game_data['teams']['away']['score']
+                g.set_starttime(game_data['gameDate'])
+                g.set_status(game_data['status']['abstractGameState'])
 
-            # print(team1 + " vs " + team2 + " - " + game['linescore']['currentPeriodTimeRemaining'] + " - " + str(game['teams']['home']['score']) + "-" + str(game['teams']['away']['score']))
-            # print()
+                g.team1 = game_data['teams']['home']['team']['name']
+                g.team2 = game_data['teams']['away']['team']['name']
+                if g.live:
+                    if g.team1 == priority or g.team2 == priority:
+                        g.priority = True
+                    try:
+                        g.period = game_data['linescore']['currentPeriodOrdinal']
+                        g.remaining = game_data['linescore']['currentPeriodTimeRemaining']
+                        g.intermission = game_data['linescore']['intermissionInfo']['inIntermission']
+                    except KeyError:
+                        g.period = g.period
+                        g.remaining = g.remaining
+                        g.intermission = g.intermission
 
-        # for x in games:
-        #     x.display_teams()
-        #     print()
+                    g.update_status()
+                if g.live or g.final:
+                    g.score1 = game_data['teams']['home']['score']
+                    g.score2 = game_data['teams']['away']['score']
 
-        time.sleep(15)
-        print("-----------------------------------------------------------------")
+        if not kill_flag():
+            time.sleep(15)

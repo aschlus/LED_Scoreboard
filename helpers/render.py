@@ -4,10 +4,10 @@ from io import BytesIO
 from PIL import Image, ImageDraw
 
 
-def draw_text(canvas, text, font, position):
+def draw_text(canvas, text, font, color, position):
     img = Image.new("RGB", size=(canvas.width, canvas.height))
     img_draw = ImageDraw.Draw(img)
-    img_draw.text((0, 0), text, font=font, fill="white")
+    img_draw.text((0, 0), text, font=font, fill=color)
     img = img.crop(img.getbbox())
 
     coords = []
