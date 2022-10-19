@@ -1,7 +1,8 @@
 # import socket
 # import json
 # import _thread
-from flask import Flask, request, jsonify
+from helpers import render
+from flask import Flask, request
 
 
 def start_server(server_socket, matrix, board):
@@ -9,7 +10,10 @@ def start_server(server_socket, matrix, board):
 
     @app.route("/data", methods=['POST'])
     def home():
-        board.name = request.json['board']
+        newBoard = request.json['board']
+        if newBoard != board.name:
+            board.name = newBoard
+            render.push_to_board(matrix, None, board, newBoard)
         matrix.brightness = request.json['brightness']
         return "Done"
 

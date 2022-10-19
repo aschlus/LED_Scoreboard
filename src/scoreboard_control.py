@@ -78,7 +78,6 @@ def run2(matrix, board):
                 if game.no_games:
                     render.draw_text(canvas, "NO GAMES TODAY", font, "white", "center_time")
                     canvas = render.push_to_board(matrix, canvas, board, module)
-                    canvas.Clear()
                     if (datetime.today() - stop_time).total_seconds() >= 0:
                         kill_flag = True
                         break
@@ -127,7 +126,6 @@ def run2(matrix, board):
                         render.draw_text(canvas, "VS", font2, "white", "center_score")
 
                     canvas = render.push_to_board(matrix, canvas, board, module)
-                    canvas.Clear()
                     runonce = False
                     if game.priority and not game.intermission:
                         time.sleep(5)

@@ -5,8 +5,24 @@ from PIL import Image, ImageDraw
 
 
 def push_to_board(matrix, canvas, board, module):
-    if board.name == module:
+    if module == "NHL Scoreboard":
+        board.nhl_cache = canvas
+    elif module == "MLB Scoreboard":
+        board.mlb_cache = canvas
+    elif module == "Metro":
+        board.metro_cache = canvas
+
+    if canvas is None:
+        if module == "NHL Scoreboard" and board.nhl_cache is not None:
+            matrix.SwapOnVSync(board.nhl_cache)
+        elif module == "MLB Scoreboard" and board.mlb_cache is not None:
+            matrix.SwapOnVSync(board.mlb_cache)
+        elif module == "Metro" and board.metro_cache is not None:
+            matrix.SwapOnVSync(board.metro_cache)
+        return
+    elif board.name == module:
         canvas = matrix.SwapOnVSync(canvas)
+    canvas.Clear()
     return canvas
 
 

@@ -37,7 +37,6 @@ def run_train(matrix, board):
 
         if switch:
             canvas = render.push_to_board(matrix, canvas, board, module)
-            canvas.Clear()
 
         time.sleep(5)
 
