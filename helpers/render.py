@@ -4,6 +4,12 @@ from io import BytesIO
 from PIL import Image, ImageDraw
 
 
+def push_to_board(matrix, canvas, board, module):
+    if board.name == module:
+        canvas = matrix.SwapOnVSync(canvas)
+    return canvas
+
+
 def draw_text(canvas, text, font, color, position):
     img = Image.new("RGB", size=(canvas.width, canvas.height))
     img_draw = ImageDraw.Draw(img)
