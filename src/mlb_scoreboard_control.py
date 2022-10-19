@@ -112,16 +112,16 @@ def run2(matrix, board):
                                             data['teams'][teamDict[game.team1]]
                                             ['abbreviation'] +
                                             ".svg"))
-                    if game.team2 == "Philadelphia Phillies":
-                        image2 = render.png(get_file("assets/logos/MLB/" +
+                    #if game.team2 == "Philadelphia Phillies":
+                    #    image2 = render.png(get_file("assets/logos/MLB/" +
+                    #                        data['teams'][teamDict[game.team2]]
+                    #                        ['abbreviation'] +
+                    #                        ".png"))
+                    #else:
+                    image2 = render.convert(get_file("assets/logos/MLB/" +
                                             data['teams'][teamDict[game.team2]]
                                             ['abbreviation'] +
-                                            ".png"))
-                    else:
-                        image2 = render.convert(get_file("assets/logos/MLB/" +
-                                                data['teams'][teamDict[game.team2]]
-                                                ['abbreviation'] +
-                                                ".svg"))
+                                            ".svg"))
 
                     if game.live:
                         setup_layout(canvas)
@@ -136,7 +136,6 @@ def run2(matrix, board):
                                         data['teams'][teamDict[game.team2]]['position']['away'])
 
                     if not game.final and not game.live:
-                        render.draw_text(canvas, game.status, font, "white", "center_status")
                         all_final = False
                     if game.live:
                         render.draw_text(canvas, str(game.score1), font2, "white", "mlb_score1")
@@ -178,6 +177,7 @@ def run2(matrix, board):
                                          font2, "white", "center_score")
                     else:
                         render.draw_rect(canvas, [21, 32], "black", [21, 0])
+                        render.draw_text(canvas, game.status, font, "white", "center_status")
                         render.draw_text(canvas, game.starttime, font, "white", "center_time")
                         render.draw_text(canvas, "VS", font2, "white", "center_score")
 
