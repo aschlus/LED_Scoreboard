@@ -1,6 +1,7 @@
 import requests
 import time
 import math
+import sys
 from datetime import date, datetime, timezone
 
 # Capitals 15
@@ -155,3 +156,11 @@ def schedule():
                 live = True
             else:
                 print("else")
+
+
+if __name__ == "__main__":
+    try:
+        schedule()
+    except KeyboardInterrupt:
+        print("Quit Received")
+        sys.exit(0)

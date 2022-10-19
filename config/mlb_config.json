@@ -1,0 +1,244 @@
+{
+     "teams" : [  {
+          "name" : "Arizona Diamondbacks",
+          "abbreviation" : "ARI",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-2, 3],
+               "away" : [40, 3]
+          }
+      }, {
+          "name" : "Atlanta Braves",
+          "abbreviation" : "ATL",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-4, 2],
+               "away" : [40, 2]
+          }
+     }, {
+          "name" : "Baltimore Orioles",
+          "abbreviation" : "BAL",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-7, 3],
+               "away" : [42, 3]
+          }
+      }, {
+          "name" : "Boston Red Sox",
+          "abbreviation" : "BOS",
+          "position" : {
+               "scale" : 0.75,
+               "home" : [-9, 4],
+               "away" : [34, 4]
+          }
+     }, {
+          "name" : "Chicago Cubs",
+          "abbreviation" : "CHC",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [0, 3],
+               "away" : [43, 3]
+          }
+      }, {
+          "name" : "Cincinnati Reds",
+          "abbreviation" : "CIN",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-4, 3],
+               "away" : [40, 3]
+          }
+      }, {
+          "name" : "Cleveland Guardians",
+          "abbreviation" : "CLE",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-4, 3],
+               "away" : [43, 3]
+          }
+      }, {
+          "name" : "Colorado Rockies",
+          "abbreviation" : "COL",
+          "position" : {
+               "scale" : 0.70,
+               "home" : [-5, 5],
+               "away" : [37, 5]
+          }
+      }, {
+          "name" : "Chicago White Sox",
+          "abbreviation" : "CWS",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-11, 3],
+               "away" : [32, 3]
+          }
+      }, {
+          "name" : "Detroit Tigers",
+          "abbreviation" : "DET",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-2, 2],
+               "away" : [42, 2]
+          }
+      }, {
+          "name" : "Houston Astros",
+          "abbreviation" : "HOU",
+          "position" : {
+               "scale" : 0.80,
+               "home" : [-2, 3],
+               "away" : [33, 3]
+          }
+      }, {
+          "name" : "Kansas City Royals",
+          "abbreviation" : "KCR",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-2, 3],
+               "away" : [42, 3]
+          }
+      }, {
+          "name" : "Los Angeles Angels",
+          "abbreviation" : "LAA",
+          "position" : {
+               "scale" : 0.85,
+               "home" : [-2, 2],
+               "away" : [41, 2]
+          }
+      }, {
+          "name" : "Los Angeles Dodgers",
+          "abbreviation" : "LAD",
+          "position" : {
+               "scale" : 0.9,
+               "home" : [-17, 2],
+               "away" : [42, 2]
+          }
+     }, {
+         "name" : "Miami Marlins",
+         "abbreviation" : "MIA",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [0, 2],
+              "away" : [41, 2]
+         }
+     }, {
+         "name" : "Milwaukee Brewers",
+         "abbreviation" : "MIL",
+         "position" : {
+              "scale" : 0.80,
+              "home" : [-3, 3],
+              "away" : [40, 3]
+         }
+     }, {
+         "name" : "Minnesota Twins",
+         "abbreviation" : "MIN",
+         "position" : {
+              "scale" : 0.70,
+              "home" : [-14, 5],
+              "away" : [30, 5]
+         }
+     }, {
+         "name" : "New York Mets",
+         "abbreviation" : "NYM",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [-2, 3],
+              "away" : [40, 3]
+         }
+     }, {
+         "name" : "New York Yankees",
+         "abbreviation" : "NYY",
+         "position" : {
+              "scale" : 0.80,
+              "home" : [-1, 3],
+              "away" : [42, 3]
+         }
+     }, {
+         "name" : "Oakland Athletics",
+         "abbreviation" : "OAK",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [-6, 3],
+              "away" : [37, 3]
+         }
+     }, {
+         "name" : "Philadelphia Phillies",
+         "abbreviation" : "PHI",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [-3, 2],
+              "away" : [43, 2]
+         }
+     }, {
+         "name" : "Pittsburgh Pirates",
+         "abbreviation" : "PIT",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [-3, 3],
+              "away" : [39, 3]
+         }
+     }, {
+          "name" : "San Diego Padres",
+          "abbreviation" : "SDP",
+          "position" : {
+               "scale" : 0.80,
+               "home" : [2, 3],
+               "away" : [25, 3]
+          }
+     }, {
+         "name" : "Seattle Mariners",
+         "abbreviation" : "SEA",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [-3, 3],
+              "away" : [39, 3]
+         }
+     }, {
+         "name" : "San Francisco Giants",
+         "abbreviation" : "SFG",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [0, 3],
+              "away" : [42, 3]
+         }
+     }, {
+         "name" : "St. Louis Cardinals",
+         "abbreviation" : "STL",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [-7, 3],
+              "away" : [36, 3]
+         }
+     }, {
+         "name" : "Tampa Bay Rays",
+         "abbreviation" : "TBR",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [-3, 3],
+              "away" : [39, 3]
+         }
+     }, {
+         "name" : "Texas Rangers",
+         "abbreviation" : "TEX",
+         "position" : {
+              "scale" : 0.70,
+              "home" : [-1, 4],
+              "away" : [41, 4]
+         }
+     }, {
+         "name" : "Toronto Blue Jays",
+         "abbreviation" : "TOR",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [-3, 3],
+              "away" : [40, 3]
+         }
+     }, {
+         "name" : "Washington Nationals",
+         "abbreviation" : "WSH",
+         "position" : {
+              "scale" : 0.85,
+              "home" : [0, 3],
+              "away" : [42, 3]
+         }
+     }  ]
+
+}
