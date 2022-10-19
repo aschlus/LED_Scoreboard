@@ -103,6 +103,21 @@ def data_loop(games, kill_flag):
                         g.inning = g.inning
                         g.inning_state = g.inning_state
                         g.outs = g.outs
+                    try:
+                        g.first = linescore_data['offense']['first']
+                        g.first = True
+                    except KeyError:
+                        g.first = False
+                    try:
+                        g.second = linescore_data['offense']['second']
+                        g.second = True
+                    except KeyError:
+                        g.second = False
+                    try:
+                        g.third = linescore_data['offense']['third']
+                        g.third = True
+                    except KeyError:
+                        g.third = False
 
                     g.update_status()
                 if g.live or g.final:

@@ -18,6 +18,9 @@ class Game:
         self.final = None
         self.priority = False
         self.no_games = False
+        self.first = False
+        self.second = False
+        self.third = False
 
     def set_starttime(self, date):
         utc = datetime.fromisoformat(date.replace("Z", "+00:00"))
