@@ -12,16 +12,22 @@ def data_loop(next_train):
         try:
             session = requests.Session()
             session.headers['api_key'] = API_KEY
-            session.mount('http://',
-                          requests.adapters.HTTPAdapter(max_retries=100))
-            response = session.get("https://api.wmata.com/StationPrediction.svc/json/GetPrediction/K04")
+            adapter = requests.adapters.HTTPAdapter(max_retries=0)
+            session.mount('http://', adapter)
+            response = session.get("https://api.wmata.com/StationPrediction.svc/json/GetPrediction/K04",
+                                   timeout=2.5)
             print("Data Received")
+        except requests.exceptions.Timeout:
+            print("*************TIMEOUT**************")
         except requests.exceptions.RequestException:
             print("*************DNS ERROR**************")
 
         if response is not None:
-            trains_data = response.json()['Trains']
-            next_train.clear()
+            try:
+                trains_data = response.json()['Trains']
+                next_train.clear()
+            except KeyError:
+                break
 
         for train_data in trains_data:
             if (train_data['DestinationName'] == "New Carrollton" or train_data['DestinationName'] == "Largo Town Center"):

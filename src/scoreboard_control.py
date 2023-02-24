@@ -45,6 +45,10 @@ teamDict = {
     "Arizona Coyotes": 29,
     "Vegas Golden Knights": 30,
     "Seattle Kraken": 31,
+    "Team Central": 32,
+    "Team Pacific": 33,
+    "Team Atlantic": 34,
+    "Team Metropolitan": 35
 }
 
 

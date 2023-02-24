@@ -70,6 +70,7 @@ def draw_rect(canvas, size, color, position):
 
     canvas.SetImage(rect.convert('RGB'), position[0], position[1])
 
+#20 -- 20 -- 20
 
 def draw_img(canvas, img, scale, position):
     img.thumbnail((canvas.width, canvas.height))
@@ -83,7 +84,7 @@ def draw_img(canvas, img, scale, position):
         position = coords
     elif position == "mlb_team2":
         coords.append(math.floor((14 - img.width) / 2) + 1)
-        coords.append(math.floor((14 - img.width) / 2) + 16)
+        coords.append(math.floor((14 - img.width) / 2) + 17)
         position = coords
     elif position == "mlb_out1":
         coords.append(canvas.width - 9)

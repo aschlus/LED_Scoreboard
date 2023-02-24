@@ -40,13 +40,18 @@ def data_loop(games, kill_flag):
 
         if response is not None:
             print("-----------------------------------------------------------------")
-            dates = response.json()['dates']
-            if dates == []:
+            try:
+                dates = response.json()['dates']
+                if dates == []:
+                    g = mlb_game.Game()
+                    g.no_games = True
+                    games.append(g)
+                else:
+                    games_data = dates[0]['games']
+            except KeyError:
                 g = mlb_game.Game()
                 g.no_games = True
                 games.append(g)
-            else:
-                games_data = dates[0]['games']
 
         if games_data is not None:
             for game_data in games_data:

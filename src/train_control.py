@@ -36,6 +36,8 @@ def run_train(matrix, board):
         print("-------------------------------")
 
         if switch:
+            render.draw_rect(canvas, [2, 32], "white", [20, 1])
+            render.draw_rect(canvas, [2, 32], "white", [42, 1])
             canvas = render.push_to_board(matrix, canvas, board, module)
 
         time.sleep(5)

@@ -16,4 +16,5 @@ class Train:
             self.color = "silver"
 
     def display_train(self):
-        print("Next Train: " + self.time + " on " + self.line + " to " + self.dest)
+        if (self.time is not None and self.line is not None and self.dest is not None):
+            print("Next Train: " + self.time + " on " + self.line + " to " + self.dest)
