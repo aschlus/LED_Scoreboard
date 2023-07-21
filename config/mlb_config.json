@@ -85,7 +85,7 @@
           "position" : {
                "scale" : 0.80,
                "home" : [-2, 3],
-               "away" : [33, 3]
+               "away" : [40, 3]
           }
       }, {
           "name" : "Kansas City Royals",
@@ -164,7 +164,7 @@
          "abbreviation" : "PHI",
          "position" : {
               "scale" : 0.85,
-              "home" : [-3, 2],
+              "home" : [0, 2],
               "away" : [43, 2]
          }
      }, {
@@ -181,7 +181,7 @@
           "position" : {
                "scale" : 0.80,
                "home" : [2, 3],
-               "away" : [25, 3]
+               "away" : [43, 3]
           }
      }, {
          "name" : "Seattle Mariners",

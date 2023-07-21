@@ -10,6 +10,8 @@ import datetime as dt
 from helpers import render
 from PIL import ImageFont
 
+module = "NHL Scoreboard"
+
 teamDict = {
     "New Jersey Devils": 0,
     "New York Islanders": 1,
@@ -43,6 +45,10 @@ teamDict = {
     "Arizona Coyotes": 29,
     "Vegas Golden Knights": 30,
     "Seattle Kraken": 31,
+    "Team Central": 32,
+    "Team Pacific": 33,
+    "Team Atlantic": 34,
+    "Team Metropolitan": 35
 }
 
 
@@ -75,8 +81,7 @@ def run2(matrix, board):
             for game in games:
                 if game.no_games:
                     render.draw_text(canvas, "NO GAMES TODAY", font, "white", "center_time")
-                    canvas = matrix.SwapOnVSync(canvas)
-                    canvas.Clear()
+                    canvas = render.push_to_board(matrix, canvas, board, module)
                     if (datetime.today() - stop_time).total_seconds() >= 0:
                         kill_flag = True
                         break
@@ -124,8 +129,7 @@ def run2(matrix, board):
                         render.draw_text(canvas, game.starttime, font, "white", "center_time")
                         render.draw_text(canvas, "VS", font2, "white", "center_score")
 
-                    canvas = matrix.SwapOnVSync(canvas)
-                    canvas.Clear()
+                    canvas = render.push_to_board(matrix, canvas, board, module)
                     runonce = False
                     if game.priority and not game.intermission:
                         time.sleep(5)

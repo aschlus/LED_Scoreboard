@@ -7,6 +7,8 @@ import train_loop
 from helpers import render
 from PIL import ImageFont
 
+module = "Metro"
+
 
 def run_train(matrix, board):
 
@@ -34,8 +36,9 @@ def run_train(matrix, board):
         print("-------------------------------")
 
         if switch:
-            canvas = matrix.SwapOnVSync(canvas)
-            canvas.Clear()
+            render.draw_rect(canvas, [2, 32], "white", [20, 1])
+            render.draw_rect(canvas, [2, 32], "white", [42, 1])
+            canvas = render.push_to_board(matrix, canvas, board, module)
 
         time.sleep(5)
 

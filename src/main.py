@@ -3,6 +3,7 @@ import sys
 import os
 import time
 import threading
+import active_board
 import scoreboard_control
 import mlb_scoreboard_control
 import train_control
@@ -30,28 +31,24 @@ def run(server_socket):
 
     render.draw_text(matrix, "LOADING...", font, "white", "loading")
 
-    # time.sleep(3)
-
-    board = "MLB Scoreboard"
+    board = active_board.Board()
+    board.name = "MLB Scoreboard"
 
     server_thread = threading.Thread(target=server.start_server, args=[server_socket, matrix, board])
     server_thread.setDaemon(True)
     server_thread.start()
 
-    if board == "NHL Scoreboard":
-        board_thread = threading.Thread(target=scoreboard_control.run2, args=[matrix, board])
-        board_thread.setDaemon(True)
-        board_thread.start()
+    board_thread = threading.Thread(target=scoreboard_control.run2, args=[matrix, board])
+    board_thread.setDaemon(True)
+    board_thread.start()
 
-    if board == "MLB Scoreboard":
-        board_thread = threading.Thread(target=mlb_scoreboard_control.run2, args=[matrix, board])
-        board_thread.setDaemon(True)
-        board_thread.start()
+    board_thread = threading.Thread(target=mlb_scoreboard_control.run2, args=[matrix, board])
+    board_thread.setDaemon(True)
+    board_thread.start()
 
-    if board == "Metro":
-        train_thread = threading.Thread(target=train_control.run_train, args=[matrix, board])
-        train_thread.setDaemon(True)
-        train_thread.start()
+    train_thread = threading.Thread(target=train_control.run_train, args=[matrix, board])
+    train_thread.setDaemon(True)
+    train_thread.start()
 
     while True:
         time.sleep(5)
@@ -68,7 +65,6 @@ if __name__ == "__main__":
         run(server_socket)
     except KeyboardInterrupt:
         print("Quit Received")
-        # server_socket.shutdown(socket.SHUT_RDWR)
         server_socket.close()
         print("Socket Closed")
         sys.exit(0)

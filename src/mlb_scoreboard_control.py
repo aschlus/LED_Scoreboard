@@ -10,8 +10,7 @@ import datetime as dt
 from helpers import render
 from PIL import ImageFont
 
-from io import BytesIO
-from PIL import Image, ImageDraw
+module = "MLB Scoreboard"
 
 teamDict = {
     "Arizona Diamondbacks": 0,
@@ -95,13 +94,18 @@ def run2(matrix, board):
             for game in games:
                 if game.no_games:
                     render.draw_text(canvas, "NO GAMES TODAY", font, "white", "center_time")
-                    canvas = matrix.SwapOnVSync(canvas)
-                    canvas.Clear()
+                    canvas = render.push_to_board(matrix, canvas, board, module)
                     if (datetime.today() - stop_time).total_seconds() >= 0:
                         kill_flag = True
                         break
                     time.sleep(60)
                     break
+                
+                try:
+                    data['teams'][teamDict[game.team1]]
+                    data['teams'][teamDict[game.team2]]
+                except KeyError:
+                    continue
 
                 while game.team1 is None or game.team2 is None:
                     time.sleep(1)
@@ -181,8 +185,7 @@ def run2(matrix, board):
                         render.draw_text(canvas, game.starttime, font, "white", "center_time")
                         render.draw_text(canvas, "VS", font2, "white", "center_score")
 
-                    canvas = matrix.SwapOnVSync(canvas)
-                    canvas.Clear()
+                    canvas = render.push_to_board(matrix, canvas, board, module)
                     runonce = False
                     if game.priority:
                         time.sleep(5)

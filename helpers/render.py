@@ -4,6 +4,28 @@ from io import BytesIO
 from PIL import Image, ImageDraw
 
 
+def push_to_board(matrix, canvas, board, module):
+    if module == "NHL Scoreboard":
+        board.nhl_cache = canvas
+    elif module == "MLB Scoreboard":
+        board.mlb_cache = canvas
+    elif module == "Metro":
+        board.metro_cache = canvas
+
+    if canvas is None:
+        if module == "NHL Scoreboard" and board.nhl_cache is not None:
+            matrix.SwapOnVSync(board.nhl_cache)
+        elif module == "MLB Scoreboard" and board.mlb_cache is not None:
+            matrix.SwapOnVSync(board.mlb_cache)
+        elif module == "Metro" and board.metro_cache is not None:
+            matrix.SwapOnVSync(board.metro_cache)
+        return
+    elif board.name == module:
+        canvas = matrix.SwapOnVSync(canvas)
+    canvas.Clear()
+    return canvas
+
+
 def draw_text(canvas, text, font, color, position):
     img = Image.new("RGB", size=(canvas.width, canvas.height))
     img_draw = ImageDraw.Draw(img)
@@ -48,6 +70,7 @@ def draw_rect(canvas, size, color, position):
 
     canvas.SetImage(rect.convert('RGB'), position[0], position[1])
 
+#20 -- 20 -- 20
 
 def draw_img(canvas, img, scale, position):
     img.thumbnail((canvas.width, canvas.height))
@@ -61,7 +84,7 @@ def draw_img(canvas, img, scale, position):
         position = coords
     elif position == "mlb_team2":
         coords.append(math.floor((14 - img.width) / 2) + 1)
-        coords.append(math.floor((14 - img.width) / 2) + 16)
+        coords.append(math.floor((14 - img.width) / 2) + 17)
         position = coords
     elif position == "mlb_out1":
         coords.append(canvas.width - 9)
