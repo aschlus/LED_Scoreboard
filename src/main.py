@@ -32,7 +32,7 @@ def run(server_socket):
     render.draw_text(matrix, "LOADING...", font, "white", "loading")
 
     board = active_board.Board()
-    board.name = "NHL Scoreboard"
+    board.name = "MLB Scoreboard"
 
     server_thread = threading.Thread(target=server.start_server, args=[server_socket, matrix, board])
     server_thread.setDaemon(True)

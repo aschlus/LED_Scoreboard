@@ -32,6 +32,8 @@ def data_loop(games, kill_flag):
             session.mount('http://', adapter)
             response = session.get("https://statsapi.mlb.com/api/v1/" +
                                    "schedule?sportId=1&date=" + todaystring, timeout=2.5)
+            #response = session.get("https://statsapi.mlb.com/api/v1/" +
+            #                       "schedule?sportId=1&date=2023-02-25", timeout=2.5)
             print("GAMES IN")
         except requests.exceptions.Timeout:
             print("*************TIMEOUT**************")
@@ -86,7 +88,7 @@ def data_loop(games, kill_flag):
                 except requests.exceptions.RequestException:
                     print("*************DNS ERROR**************")
 
-                if linescore.json() is not None:
+                if linescore is not None:
                     print("-----------------------------------------------------------------")
                     linescore_data = linescore.json()
 

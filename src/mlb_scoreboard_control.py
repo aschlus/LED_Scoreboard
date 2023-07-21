@@ -100,6 +100,12 @@ def run2(matrix, board):
                         break
                     time.sleep(60)
                     break
+                
+                try:
+                    data['teams'][teamDict[game.team1]]
+                    data['teams'][teamDict[game.team2]]
+                except KeyError:
+                    continue
 
                 while game.team1 is None or game.team2 is None:
                     time.sleep(1)
